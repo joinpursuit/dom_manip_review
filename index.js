@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         description.innerText = movie.description;
         div.appendChild(title)
         div.appendChild(description)
-        let oldDiv = document.querySelector("displayDiv");
+        let oldDiv = document.querySelector(".displayDiv");
         let body = document.querySelector("body");
         if(oldDiv) {
           body.removeChild(oldDiv)
@@ -51,6 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
       })
 
 
+    })
+    .catch(err => {
+      console.log(err);
     })
 
 
